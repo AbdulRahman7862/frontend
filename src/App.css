@@ -1,0 +1,76 @@
+/* CustomScrollbar.css */
+/* Track */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track with gradient background */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+    /* background: linear-gradient(to right, #0048FF, #FF6D43); */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #0048FF, #f78261);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+  }
+
+  /* YourComponent.css */
+
+/* html {
+  cursor: none;
+}
+
+.cursor1 {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0048FF;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.1s;
+}
+
+.cursor2 {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  border: 1px solid #0048FF;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.15s;
+}
+
+.app:hover ~ .cursor1 {
+  transform: translate(-50%, -50%);
+  background-color: rgb(179, 35, 35);
+  opacity: 0.5;
+} */
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}   
+
+.animate-slide-in {
+  animation: slideIn 1.5s ease-in-out;
+}
